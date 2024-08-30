@@ -5,16 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News App</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Frontend//Css/style.css">
+     <!-- Favicon -->
+     <link href="img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 </head>
-
+<style>
+    #register{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: purple;
+    }
+</style>
 <body>
     <nav>
         <div class="main-nav container flex">
             <a href="#" onclick="reload()" class="company-logo">
                 <!-- <img src="./Logo/logo.png" alt="company logo"> -->
-                <img src="./Logo/news.png" alt="company logo">
+                <img src="./Frontend/Logo/news.png" alt="company logo">
             </a>
             <div class="nav-links">
                 <ul class="flex">
@@ -25,18 +37,15 @@
                     <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
                 </ul>
             </div>
+        
             <div class="search-bar flex">
                 <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
                 <button id="search-button" class="search-button">Search</button>
             </div>
-            <!-- <div class="sign">
-                <a href="#">
-                    <img src="https://ii1.pepperfry.com/assets/w22-profile-icon.svg" alt="./Logo/person-icon.png">
-                </a>
-            </div> -->
-            <!-- <div class="sign">
-                <a href="">SignUp/SignIn</a>
-            </div> -->
+            
+            <div class="social">
+                <a href="./Frontend/Pages/signup.html"><i class="fas fa-user-circle"></i></a>
+                          </div>
         </div>
 
     </nav>
@@ -59,11 +68,14 @@
             </div>
         </div>
     </template>
-    <script src="./script.js"></script>
+
+
+    <!-- Footer part -->
+
+    
+    <script src="./Frontend/Script/index.js"></script>
     
         
 
 </body>
-<!-- <script src="./script.js"></script> -->
-
 </html>

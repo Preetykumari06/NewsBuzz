@@ -57,6 +57,7 @@ nav {
 .main-nav {
     justify-content: space-between;
     padding-block: 8px;
+    /* border: 2px solid green; */
 }
 
 .company-logo img {
@@ -65,7 +66,13 @@ nav {
 }
 
 .nav-links ul {
-    gap: 16px;
+    gap: 17px;
+    /* border: 2px solid black; */
+    width: 400px;
+    font-size: 18px;
+    font-weight: 600;
+    color: grey;
+    padding-top: 10px;
 }
 
 .hover-link {
@@ -85,13 +92,13 @@ nav {
 }
 
 .search-bar {
-    height: 32px;
-    gap: 8px;
+    height: 35px;
+    gap: 10px;
     /* border:1px solid red; */
 }
 
 .news-input {
-    width: 200px;
+    width: 280px;
     height: 100%;
     padding-inline: 12px;
     border-radius: 4px;
@@ -113,13 +120,7 @@ nav {
 .search-button:hover {
     background-color: rgb(158,63,253);
 }
-/* .sign{
-  font-size: 22px;
-}
-.sign a{
-    color: #2294ed;
-    font-style:initial;
-} */
+
 
 main {
     padding-block: 20px;
@@ -164,4 +165,45 @@ main {
 
 .news-source {
     margin-block: 12px;
+}
+
+
+
+/* icon */
+/* General styles for the social icon container */
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Style for the link inside the social container */
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    font-size: 25px; /* Adjust icon size */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and scale */
+}
+
+/* Icon styling */
+.social a i {
+    color: #333; /* Default icon color */
+}
+
+/* Hover effect for the icon */
+.social a:hover i {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+/* Optional: Add a background to the social container */
+.social {
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

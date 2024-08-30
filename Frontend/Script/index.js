@@ -10,27 +10,20 @@ const url = "https://newsapi.org/v2/everything?q=";
     }
 
     async function fetchNews(query) {
-    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
-    const data = await res.json();
-    // console.log(data);
-    bindData(data.articles);
-   }
-
-   
-
-    // async function fetchNews(query) {
-    //     try {
-    //         const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
-    //         if (!res.ok) {
-    //         throw new Error('Network response was not ok');
-    //         }
-    //         const data = await res.json();
-    //         // console.log(data);
-    //         bindData(data.articles);
-    //         } catch (error) {
-    //             console.error('There was a problem with the fetch operation:', error);
-    //         }
-    //     }
+        try {
+            console.log(`Fetching news for query: ${query}`);
+            const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+            console.log('Response status:', res.status);
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await res.json();
+            console.log('Fetched data:', data);
+            bindData(data.articles);
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    }
 
         function bindData(articles) {
             const cardsContainer = document.getElementById("cards-container");
